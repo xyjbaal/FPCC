@@ -92,7 +92,7 @@ def perspectiveDepthImageToPointCloud(image_depth,image_rgb, seg, gt_path,defaul
     return point_cloud, transforms
 
 
-part_dir = './SileaneBunny_part_1/'
+part_dir = './IPARingScrew_part_1/'
 with open(part_dir+'parameter.json', 'r') as f:
     parameter = json.load(f)
 print(parameter)
@@ -129,8 +129,8 @@ def process_data(data_range):
             RGB = cv2.imread(part_dir+"p_rgb/cycle_%04d/%03d_rgb.png"%(c,d),-1)
             seg = cv2.imread(part_dir+"p_segmentation/cycle_%04d/%03d_segmentation.png"%(c,d),-1)
             print('depth',seg,seg.shape)
-            # seg = seg.reshape([512,512,-1])
-            seg = seg.reshape([474,506,-1])
+            seg = seg.reshape([512,512,-1])
+            # seg = seg.reshape([474,506,-1])
             # seg = seg.reshape([1018,1178,-1])
 
 
@@ -143,7 +143,7 @@ def process_data(data_range):
 
             point_cloud , transforms = perspectiveDepthImageToPointCloud(depth,RGB,seg, gt_path, defaultValue,perspectiveAngle,clip_start,clip_end,resolutionX,resolutionY,resolution_big,pixelOffset_X_KoSyTopLeft,pixelOffset_Y_KoSyTopLeft)
             # print(point_cloud)
-            np.savetxt('./SileaneBunny_part_1/train_pointcloud/%04d_%03d.txt'%(c,d), point_cloud, fmt='%0.6f')
+            np.savetxt('./IPARingScrew_part_1/train_pointcloud/%04d_%03d.txt'%(c,d), point_cloud, fmt='%0.6f')
 
 
 

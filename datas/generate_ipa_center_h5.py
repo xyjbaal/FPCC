@@ -4,9 +4,9 @@ import glob
 import csv
 import h5py
 
-root_dir  = './SileaneBunny_part_1/train_pointcloud/*.txt'
-matrix_dir = './SileaneBunny_part_1/gt/'
-output_dir = os.path.join('./', 'SileaneBunny_part_1/h5')
+root_dir  = './IPARingScrew_part_1/train_pointcloud/*.txt'
+matrix_dir = './IPARingScrew_part_1/gt/'
+output_dir = os.path.join('./', 'IPARingScrew_part_1/h5')
 data_dtype = 'float32'
 label_dtype = 'int32'
 def fpcc_save_h5(h5_filename, data,  data_dtype='float32', label_dtype='uint8'):
