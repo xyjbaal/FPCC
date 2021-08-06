@@ -13,7 +13,7 @@ python fpcc_train.py
 ```bash
 python fpcc_test.py
 ```
-### evaluation metric
+### Evaluation metric
 We use the code provided by [<a href="https://github.com/WXinlong/ASIS">ASIS</a>] to calculate precision and recall.
 
 
