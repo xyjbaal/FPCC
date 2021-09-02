@@ -14,7 +14,7 @@ python fpcc_train.py
 python fpcc_test.py
 ```
 ### Evaluation metric
-We use the code provided by [<a href="https://github.com/WXinlong/ASIS">ASIS</a>] to calculate precision and recall.
+We use the code (eval_iou_accuracy.py) provided by [<a href="https://github.com/WXinlong/ASIS">ASIS</a>] to calculate precision and recall.
 
 
 ### XA Dataset 
