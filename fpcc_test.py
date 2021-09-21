@@ -28,7 +28,7 @@ parser.add_argument('--restore_dir', type=str, default='checkpoint/', help='Dire
 parser.add_argument('--point_dim', type=int, default=6, help='dim of point cloud,XYZ,NxNyNz or RGB')
 parser.add_argument('--conf_th', type=float, default=0.6, help='min valid confidence 0.4~0.8')
 parser.add_argument('--backbone', type=str, default='dgcnn', help='backbone: pointnet,dgcnn,Xnet')
-parser.add_argument('--r_nms', type=float, default=.1, help='bunny:, A:.6 / B: 1 / C:1.2 / ring: 0.1 / gear: .08')
+parser.add_argument('--r_nms', type=float, default=.1, help='bunny:, A: .5~.6 / B: 0.8~1 / C:.4~.5 / ring: 0.1 / gear: .08')
 FLAGS = parser.parse_args()
 
 # DEFAULT SETTINGS
