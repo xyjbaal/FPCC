@@ -215,7 +215,7 @@ def BlockMerging(volume, volume_seg, pts, grouplabel, groupseg, gap=1e-3):
             finalgrouplabel[i] = groupcate[grouplabel[i]]
     return finalgrouplabel
 
-def GroupMerging_fpcc(pts, pts_features, center_scores, conf_threshold=0.5, max_feature_dis=None, use_3d_mask=None, r_nms=1):
+def GroupMerging_fpcc(pts, pts_features, center_scores, center_socre_th=0.5, max_feature_dis=None, use_3d_mask=None, r_nms=1):
     """
     input:
         pts: xyz of point cloud
@@ -226,7 +226,7 @@ def GroupMerging_fpcc(pts, pts_features, center_scores, conf_threshold=0.5, max_
 
     """
 
-    validpts_index = np.where(center_scores > conf_threshold)[0]
+    validpts_index = np.where(center_scores > center_socre_th)[0]
 
 
     validpts = pts[validpts_index,:]
