@@ -26,7 +26,7 @@ parser.add_argument('--verbose', action='store_true', help='if specified, use de
 # parser.add_argument('--input_list', type=str, default='t', help='test data list')
 parser.add_argument('--restore_dir', type=str, default='checkpoint/', help='Directory that stores all training logs and trained models')
 parser.add_argument('--point_dim', type=int, default=6, help='dim of point cloud,XYZ,NxNyNz or RGB')
-parser.add_argument('--conf_th', type=float, default=0.6, help='min valid confidence 0.4~0.8')
+parser.add_argument('--center_socre_th', type=float, default=0.6, help='valid center score: 0.4~0.8')
 parser.add_argument('--backbone', type=str, default='dgcnn', help='backbone: pointnet,dgcnn,Xnet')
 parser.add_argument('--r_nms', type=float, default=.1, help='bunny:, A: .5~.6 / B: 0.8~1 / C:.4~.5 / ring: 0.1 / gear: .08')
 FLAGS = parser.parse_args()
@@ -47,7 +47,7 @@ SAMPLE_LIMIT = None
 # In fact, for some tasks, e.g., pose estimation, XYZ location, you do not need to process all points.
 
 
-conf_threshold = FLAGS.conf_th
+center_socre_th = FLAGS.center_socre_th
 max_feature_distance = None # The point whose feature distance from the center point is greater than this value is regarded as noise [-1]
 max_3d_distance = 1. # The farthest distance from the point to the center. usually max_3d_distance > r_nms
 
@@ -264,7 +264,7 @@ def predict():
             point_features = point_features[:points_num,:]
 
             group_pred, c_index = GroupMerging_fpcc(input_data[:,3:6],point_features, pred_score_val, \
-                conf_threshold=conf_threshold, max_feature_dis=max_feature_distance, use_3d_mask=max_3d_distance, r_nms=R_NMS)
+                center_socre_th = center_socre_th, max_feature_dis=max_feature_distance, use_3d_mask=max_3d_distance, r_nms=R_NMS)
             # scene_end = scene_start- time.time()
 
             # c_score = pred_score_val[c_index]
