@@ -19,6 +19,9 @@ python fpcc_test.py
 ### Evaluation metric
 We use the code (eval_iou_accuracy.py) provided by [<a href="https://github.com/WXinlong/ASIS">ASIS</a>] to calculate precision and recall.
 
+### Trained weights
+We uploaded trained weights for the ring, gear, and part A. You can use these weights to test the performance of FPCC directly and debug. 
+Please note that these weights are not the ones used in our paper.
 
 ### XA Dataset 
 XA dataset can be downloaded [<a href="https://drive.google.com/drive/folders/1KCDS8_ZHxav5NZKhBzgEX4srf5xg7vW0?usp=sharing">here</a>].
@@ -36,10 +39,10 @@ Please cite this paper or "FPCC" if you want to use XA dataset in your work,
 	}
 ### IPA Dataset 
 The information about IPA dataset can be found [<a href="https://www.bin-picking.ai/">here</a>].
-The paper about IPA dataset can be downloaded [<a href="https://arxiv.org/abs/1912.12125">here</a>].
-The author of IPA did not provide a public link to download the data set, so maybe you need to register first.
+The detail about IPA dataset can be downloaded [<a href="https://arxiv.org/abs/1912.12125">here</a>].
+The authors of IPA did not provide a public link to download the data set, so maybe you need to register first.
 
-We only uploaded part of the IPA dataset in the "datas" folder.
+We only uploaded a part of the IPA dataset in the "datas" folder.
 Use the following scripts for generating h5 files for traing.
 ```bash
 python convert_csv2json_annotation.py
