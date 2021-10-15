@@ -43,6 +43,7 @@ The detail about IPA dataset can be downloaded [<a href="https://arxiv.org/abs/1
 The authors of IPA did not provide a public link to download the data set, so maybe you need to register first.
 
 We only uploaded a part of the IPA dataset in the "datas" folder.
+（1~3 col is the coordinates, 4th col is the visible score defined by the IPA dataset, and the last column (5th) is the instance label.）
 Use the following scripts for generating h5 files for traing.
 ```bash
 python convert_csv2json_annotation.py
