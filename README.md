@@ -58,6 +58,5 @@ python generate_file_list.py
 This project is built upon [<a href="https://github.com/charlesq34/pointnet">PointNet</a>], [<a href="https://github.com/laughtervv/SGPN">SGPN</a>] and [<a href="https://github.com/WangYueFt/dgcnn">DGCNN</a>]
 
 ### Others
-The program is not very beautiful.
 If you have any questions or advice, please feel free to contact me at the address below.
 baalxyj@gmail.com
