@@ -1,4 +1,4 @@
-### FPCC: Fast Point Cloud Clustering for Instance Segmentation [<a href="https://arxiv.org/pdf/2012.14618.pdf">Arxiv</a>]
+### FPCC: Fast Point Cloud Clustering-based Instance Segmentation for Industrial Bin-picking [<a href="https://arxiv.org/pdf/2012.14618.pdf">Arxiv</a>]
 
 
 ### Citation
