@@ -1,5 +1,13 @@
 ### FPCC: Fast Point Cloud Clustering based Instance Segmentation for Industrial Bin-picking [<a href="https://arxiv.org/pdf/2012.14618.pdf">Arxiv</a>]
-
+### Citation
+If you find our work useful in your research, please consider citing:
+	@article{XU2022,
+	title = {FPCC: Fast Point Cloud Clustering-based Instance Segmentation for Industrial Bin-picking},
+	journal = {Neurocomputing},
+	year = {2022},
+	issn = {0925-2312},
+	author = {Yajun Xu and Shogo Arai and Diyi Liu and Fangzhou Lin and Kazuhiro Kosuge},
+	}
 ### Dependencies
 - `tensorflow` (1.13.1)
 - `h5py`
