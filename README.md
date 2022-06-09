@@ -1,6 +1,6 @@
 ### FPCC: Fast Point Cloud Clustering-based Instance Segmentation for Industrial Bin-picking [<a href="https://arxiv.org/pdf/2012.14618.pdf">Arxiv</a>]
 
-![NMS](https://github.com/xyjbaal/FPCC/nms.png)
+![NMS](https://github.com/xyjbaal/FPCC/blob/main/nms.png)
 
 ## Other Implementation
 * [pytorch-fpcc](https://github.com/xyjbaal/fpcc_pytorch)
