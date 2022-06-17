@@ -7,12 +7,17 @@
 ### Citation
 If you find our work useful in your research, please consider citing:
 
-	@article{XU2022,
-	  title={FPCC: Fast Point Cloud Clustering-based Instance Segmentation for Industrial Bin-picking},
-	  author = {Yajun Xu and Shogo Arai and Diyi Liu and Fangzhou Lin and Kazuhiro Kosuge},
-	  year = {2022},
-	  issn = {0925-2312},
-	  journal={Neurocomputing},
+	@article{XU2022255,
+	title = {FPCC: Fast point cloud clustering-based instance segmentation for industrial bin-picking},
+	journal = {Neurocomputing},
+	volume = {494},
+	pages = {255-268},
+	year = {2022},
+	issn = {0925-2312},
+	doi = {https://doi.org/10.1016/j.neucom.2022.04.023},
+	url = {https://www.sciencedirect.com/science/article/pii/S0925231222003915},
+	author = {Yajun Xu and Shogo Arai and Diyi Liu and Fangzhou Lin and Kazuhiro Kosuge},
+	keywords = {Bin-picking, 3D Point Cloud, Instance segmentaion, Deep Learning},
 	}
    
 ### Dependencies
@@ -28,7 +33,7 @@ python fpcc_train.py
 ```bash
 python fpcc_test.py
 ```
-### evaluation metric
+### Evaluation metric
 We use the code provided by [<a href="https://github.com/WXinlong/ASIS">ASIS</a>] to calculate precision and recall.
 
 
