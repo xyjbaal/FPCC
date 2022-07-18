@@ -24,6 +24,10 @@ If you find our work useful in your research, please consider citing:
 - `tensorflow` (1.13.1)
 - `h5py`
 
+### Data generation
+Thanks for [<a href="https://github.com/waiyc">waiyc</a>] for providing  a [<a href="https://github.com/waiyc/Bin-Picking-Dataset-Generation">script</a>] to generate synthetic data by Pybullet.
+The dataset is generate and recorded base on the steps mentioned in IPA Dataset.
+
 ### Training & Testing 
 
 
